@@ -1,0 +1,21 @@
+
+[project]
+name = "volda-web-analysis-tools"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.1.2",
+    "flask-smorest>=0.46.2",
+    "marshmallow>=4.1.1",
+]
+
+[project.scripts]
+serve = "serve:main"
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["app", "main"]
